@@ -14,4 +14,4 @@ This optimized pool updates the refresh timer each time the connection is used. 
 1. Add the optimized_queue_pool.py file to your project
 2. Import OptimizedQueuePool from optimized_queue_pool
 3. When creating a SQLAlchemy database engine, pass OptimizedQueuePool in with the poolclass argument
-4. Note: in the engine creation call, make sure the pool_recycle argument is set to a value less than MySQL's global `wait_timeout` variable (you can find out by running SHOW GLOBAL VARIABLES LIKE 'wait_timeout' in MySQL)
+4. Note: in the engine creation call, make sure the pool_recycle argument is set to a value less than MySQL's global `wait_timeout` variable (you can find out by running `SHOW GLOBAL VARIABLES LIKE 'wait_timeout'` in MySQL)
